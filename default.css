@@ -1,0 +1,58 @@
+body {
+    background: #a0fffd;
+    color: #000000;
+}
+h2 {
+    border-bottom: 3px solid #0f4c81;
+    border-left: 16px solid #0f4c81;
+    padding-left: 10px;
+}
+h3 {
+    border-bottom: 1px solid #0f4a7d;
+    padding-bottom: 5px;
+    color: #0f4c81;
+}
+
+/* バイク写真のサイズ調整 */
+.bike-photo {
+    width: 300px;  
+}
+nav li {
+    display: block;
+    width: 80px;
+    float: left;
+}
+nav a {
+    color: #fff;
+    background: url(gray2.png) repeat-x bottom;
+    font-weight: bold;
+    display: block;
+    line-height: 1.0;
+    padding: 6px 0;
+    border-left: 1px solid #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: url(blue2.png) repeat-x bottom;
+}
+
+nav #current a{
+    color: #55c;
+    background: #fff;
+}
+#page {
+    margin: 0 auto;
+    width: 900px;
+}
+#main {
+    float: left;
+    width: 900px;
+}
+footer {
+    clear: both;
+}
+
+
+
