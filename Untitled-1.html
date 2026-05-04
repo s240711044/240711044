@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>数当てゲーム VS CP</title>
+    <script src="ja.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>数当てゲーム</h1>
+    <h2 id="life-display">残り試行回数：7 </h2>
+
+    <div style="background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #ccc;">
+        <strong>CP:</strong> <span id="message">1〜100の数値を生成しました。入力を待機中...</span>
+    </div>
+
+    <p>
+        数字を入力：<input id="num" type="number" min="1" max="100">
+    
+
+        <button onclick="judge()">判定</button>
+    </p>
+
+</body>
+</html>
+
+
