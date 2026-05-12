@@ -1,57 +1,102 @@
 body {
-    background: #a0fffd;
-    color: #000000;
-}
-h2 {
-    border-bottom: 3px solid #0f4c81;
-    border-left: 16px solid #0f4c81;
-    padding-left: 10px;
-}
-h3 {
-    border-bottom: 1px solid #0f4a7d;
-    padding-bottom: 5px;
-    color: #0f4c81;
-}
-
-/* バイク写真のサイズ調整 */
-.bike-photo {
-    width: 300px;  
-}
-nav li {
-    display: block;
-    width: 80px;
-    float: left;
-}
-nav a {
-    color: #fff;
-    background: url(gray2.png) repeat-x bottom;
-    font-weight: bold;
-    display: block;
-    line-height: 1.0;
-    padding: 6px 0;
-    border-left: 1px solid #fff;
-    text-align: center;
-    text-decoration: none;
-}
-
-nav a:hover{
-    background: url(blue2.png) repeat-x bottom;
-}
-
-nav #current a{
-    color: #55c;
-    background: #fff;
+    background: #f0f2f5;
+    color: #333;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    line-height: 1.8;
+    margin: 0;
 }
 #page {
-    margin: 0 auto;
-    width: 900px;
+    margin: 40px auto;         
+    width: 90%;                
+    max-width: 800px;          
+    background: #fff;          
+    border-radius: 8px;        
+    overflow: hidden;          /* 中身が箱からはみ出さないようにする */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* 箱の下に「薄い影」をつけて浮かせる */
 }
+
+
+header {
+    background: #1a1a1a;       
+    padding: 30px;             /* 内側の余白：上下左右に30px */
+    text-align: center;        
+}
+
+#logo {
+    max-width: 200px;          
+    height: auto;
+    filter: brightness(0) invert(1); 
+}
+
+nav ul {
+    list-style: none;          
+    padding: 0;
+    margin: 20px 0 0 0;        
+    display: flex;             
+    justify-content: center;   
+    gap: 15px;                 /* メニュー同士の間隔 */
+}
+
+nav a {
+    color: #bbb;               
+    text-decoration: none;     
+    font-size: 0.9rem;         
+    transition: color 0.3s;    /* 色が変わる時に0.3秒*/
+}
+
+nav a:hover {
+    color: #fff;               
+}
+
+
+nav #current a {
+    color: #fff;               
+    border-bottom: 2px solid #0f4c81; 
+}
+
+
 #main {
-    float: left;
-    width: 900px;
+    padding: 50px 60px;       
 }
+
+
+h2 {
+    font-size: 2.2rem;         
+    color: #1a1a1a;
+    border: none;              /* 元々あった線を消す */
+    text-align: center;        
+    margin-bottom: 40px;       
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #0f4c81;            
+    border-left: 4px solid #0f4c81; 
+    padding-left: 15px;        
+    margin-top: 35px;          
+}
+
+
+.bike-photo {
+    width: 100%;               
+    max-width: 600px;          
+    display: block;            
+    margin: 25px auto;         
+    border-radius: 12px;       /* 写真の角を丸くする */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+    transition: transform 0.3s; 
+}
+
+
+.bike-photo:hover {
+    transform: scale(1.02);    /* 写真を1.02倍に大きくする */
+}
+
 footer {
-    clear: both;
+    background: #f9f9f9;       
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #eee; 
 }
 
 
