@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>ラックナンバーサーチ </title>
+    <script src="numbersearch.js" type="text/javascript" defer></script>
+    
+    <style>
+      body {
+        font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+        text-align: center;
+        padding-top: 60px;
+        background-color: #1e222b; 
+        color: #f5f6fa;        
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        font-size: 15px;
+        color: #a0aec0; 
+        margin-bottom: 40px;
+      }
+      button {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 12px 32px;
+        background-color: #3b4252;
+        color: #eceff4;
+        border: 1px solid #4c566a;
+        border-radius: 6px; /* 少し角を丸める */
+        cursor: pointer;
+        transition: all 0.3s ease; /* マウスホバー時のアニメーション */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background-color: #434c5e;
+        border-color: #88c0d0;
+        transform: translateY(-2px); /* 浮き上がらせる */
+      }
+
+      .game-container {
+        font-size: 38px;
+        margin: 50px 0;
+        min-height: 60px; 
+      }
+
+      #question1 {
+        letter-spacing: 20px; 
+        font-weight: 500;
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      }
+
+      #ans1 {
+        color: #4ed9a6; 
+        font-weight: 600;
+        margin-left: 15px;
+      }
+
+      #result {
+        font-size: 22px;
+        font-weight: 500;
+        color: #81a1c1; 
+        margin-top: 30px;
+        min-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>ラックナンバーサーチ</h1>
+    <p class="description">1〜9のうち、足りない数字のキーを素早くタイプしてください (全10問)</p>
+    
+    <button onclick="start()">START</button>
+    
+    <div class="game-container">
+      <span id="question1"></span>
+      <span id="ans1"></span>
+    </div>
+
+    <div id="result"></div>
+
+  </body>
+</html>
