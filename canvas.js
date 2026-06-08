@@ -1,4 +1,4 @@
-let canvas = document.getElementById("canvas");
+let canvaslet  = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
 let img = new Image();
@@ -24,6 +24,8 @@ function drawFrame() {
     if (tunnelScale > 3.0) {
         tunnelScale = 0.1;
     }
+
+    ctx.save();
 
     ctx.translate(canvas.width / 2, canvas.height / 2);
 
