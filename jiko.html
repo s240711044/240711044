@@ -5,8 +5,18 @@
 <title>自己紹介</title>
 <link rel="stylesheet" href="./default.css">
 
-<link rel="preload" href="ti.png?v=2" as="image">
-<link rel="preload" href="ZRX400.png?v=2" as="image">
+<link rel="preload" href="ti.png" as="image">
+<link rel="preload" href="ZRX400.png" as="image">
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var imgs = ['ti.png', 'ZRX400.png'];
+    imgs.forEach(function(src) {
+      var img = new Image();
+      img.src = src;
+    });
+  });
+</script>
 
 </head>
 
@@ -14,7 +24,7 @@
 <div id="page">
 
 <header>
-  <img id="logo" src="ti.png?v=2" alt="ロゴ画像">
+  <img id="logo" src="ti.png" alt="ロゴ画像">
   <nav>
 
     <ul>
@@ -45,7 +55,7 @@
         風を切る感覚はもちろん、このマシンの機能美に惹かれています。
       </p>
       
-      <img src="ZRX400.png?v=2" alt="愛車" class="bike-photo">
+      <img src="ZRX400.png" alt="愛車" class="bike-photo">
       
       <p style="text-align: center; color: #666; font-size: 0.9rem;">
         この洗練されたデザインが、一番のお気に入りです。
